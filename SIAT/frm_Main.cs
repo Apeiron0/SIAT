@@ -41,5 +41,21 @@ namespace SIAT
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            splashScreenManager1.ShowWaitForm();
+            foreach (Form item in this.MdiChildren)
+            {
+                item.Close();
+            }
+
+            frm_Alumnos alumnos = new frm_Alumnos();
+            alumnos.MdiParent = this;
+            alumnos.Width = panel2.Width;
+            alumnos.Height = panel1.Height;
+            splashScreenManager1.CloseWaitForm();
+            alumnos.Show();
+        }
     }
 }
