@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.nuevoAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -50,24 +50,28 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoAlumnoToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(156, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
             // 
             // nuevoAlumnoToolStripMenuItem
             // 
             this.nuevoAlumnoToolStripMenuItem.Name = "nuevoAlumnoToolStripMenuItem";
-            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoAlumnoToolStripMenuItem.Text = "&Nuevo Alumno";
+            this.nuevoAlumnoToolStripMenuItem.Click += new System.EventHandler(this.nuevoAlumnoToolStripMenuItem_Click);
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // frm_Alumnos
             // 
@@ -87,8 +91,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.frm_Alumnos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

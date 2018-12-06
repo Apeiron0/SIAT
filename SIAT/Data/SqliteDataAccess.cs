@@ -17,7 +17,7 @@ namespace SIAT.Data
         {
             using(IDbConnection cnn=new SQLiteConnection(LoadConnectionString()))
             {
-                var output = cnn.Query<AlumnoModel>("Select * from Alumnos", new DynamicParameters());
+                var output = cnn.Query<AlumnoModel>("Select * from Alumnos where Activo=1", new DynamicParameters());                
                 return output.ToList();
             }
         }

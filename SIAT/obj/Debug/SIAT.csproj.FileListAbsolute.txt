@@ -119,3 +119,4 @@ C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\ja\Dev
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\obj\Debug\SIAT.csprojAssemblyReference.cache
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\obj\Debug\SIAT.WaitForm1.resources
+C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\obj\Debug\SIAT.frm_Alumnos_Nuevo.resources

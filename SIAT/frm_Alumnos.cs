@@ -31,5 +31,11 @@ namespace SIAT
         {
             LoadAlumnos();
         }
+
+        private void nuevoAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Alumnos_Nuevo alumnos_Nuevo = new frm_Alumnos_Nuevo();
+            alumnos_Nuevo.ShowDialog();
+        }
     }
 }
