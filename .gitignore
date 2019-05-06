@@ -4,3 +4,7 @@ SIAT/bin/Debug/Infomade_DB\.db
 *.cache
 
 SIAT/bin/Debug/
+
+SIAT/\.vs/SIAT/v15/\.suo
+
+SIAT/\.vs/SIAT/v15/Server/sqlite3/storage\.ide-shm
