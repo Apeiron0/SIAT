@@ -45,6 +45,30 @@ namespace SIAT.Data
             }
 
         }
+
+        public void EliminarAlumno(int id, string nombre)
+        {
+            using (SQLiteConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                SQLiteCommand edit = new SQLiteCommand("Update Alumnos set Activo=0 where id="+id, cnn);
+                try
+                {
+                    edit.ExecuteNonQuery();
+                    
+                }
+                catch (Exception ex)
+                {
+                    
+                }
+                finally
+                {
+                    cnn.Close();
+                }
+
+            }
+
+        }
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

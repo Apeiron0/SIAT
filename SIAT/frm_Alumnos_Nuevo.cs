@@ -22,8 +22,8 @@ namespace SIAT
             this.Close();
         }
 
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
+        private void simpleButton2_Click(object sender, EventArgs e)        {       
+
             Modelos.AlumnoModel alumno = new Modelos.AlumnoModel();
             alumno.Domicilio = txt_domicilio.Text;
             alumno.F_Ingreso = Convert.ToDateTime(txt_fIngreso.Text);

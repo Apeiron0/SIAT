@@ -165,6 +165,7 @@
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombre.Properties.Appearance.Options.UseFont = true;
+            this.txt_nombre.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txt_nombre.Size = new System.Drawing.Size(315, 22);
             this.txt_nombre.TabIndex = 8;
             // 
@@ -196,6 +197,7 @@
             this.txt_domicilio.Name = "txt_domicilio";
             this.txt_domicilio.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_domicilio.Properties.Appearance.Options.UseFont = true;
+            this.txt_domicilio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txt_domicilio.Size = new System.Drawing.Size(315, 22);
             this.txt_domicilio.TabIndex = 11;
             // 
@@ -205,6 +207,7 @@
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_telefono.Properties.Appearance.Options.UseFont = true;
+            this.txt_telefono.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txt_telefono.Size = new System.Drawing.Size(315, 22);
             this.txt_telefono.TabIndex = 12;
             // 
@@ -214,6 +217,7 @@
             this.txt_notas.Name = "txt_notas";
             this.txt_notas.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_notas.Properties.Appearance.Options.UseFont = true;
+            this.txt_notas.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txt_notas.Size = new System.Drawing.Size(315, 154);
             this.txt_notas.TabIndex = 13;
             // 

@@ -38,5 +38,20 @@ namespace SIAT
             alumnos_Nuevo.ShowDialog();
             LoadAlumnos();
         }
+
+        private void eliminarAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {            
+            string NombreAlumno = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, gridView1.Columns[1]).ToString();
+            string IdAlumno = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, gridView1.Columns[0]).ToString();
+
+            DialogResult result = MessageBox.Show("Seguro que desea ELIMINAR a: " + NombreAlumno, "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result==DialogResult.Yes)
+            {
+                AlumnoModel alumno = new AlumnoModel();
+                alumno.eliminarAlumno(Convert.ToInt32(IdAlumno), NombreAlumno);
+                LoadAlumnos();
+            }            
+        }
     }
 }

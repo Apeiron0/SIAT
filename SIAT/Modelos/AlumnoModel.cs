@@ -13,16 +13,17 @@ namespace SIAT.Modelos
 
         public int Id { get; set; }
         public string Nombre { get; set; }
+        public int Edad
+        {
+            get { return calcularEdad(F_Nacimiento); }
+        }
         public DateTime F_Nacimiento { get; set; }
         public DateTime F_Ingreso { get; set; }
         public string Domicilio { get; set; }
         public string Telefono { get; set; }
         public string Notas { get; set; }
-        public int Activo { get; set; }
-        public int Edad
-        {
-            get { return calcularEdad(F_Nacimiento); }
-        }
+        //public int Activo { get; set; }
+        
 
         #endregion
 
@@ -53,6 +54,20 @@ namespace SIAT.Modelos
                 return ex.Message;
             }            
             
+        }
+
+        public void eliminarAlumno(int id, string nombre)
+        {
+            try
+            {
+                SqliteDataAccess dataAccess = new SqliteDataAccess();
+                dataAccess.EliminarAlumno(id, nombre);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
                      
