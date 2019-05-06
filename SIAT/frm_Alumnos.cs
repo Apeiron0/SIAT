@@ -36,6 +36,7 @@ namespace SIAT
         {
             frm_Alumnos_Nuevo alumnos_Nuevo = new frm_Alumnos_Nuevo();
             alumnos_Nuevo.ShowDialog();
+            LoadAlumnos();
         }
     }
 }

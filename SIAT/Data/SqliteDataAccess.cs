@@ -21,10 +21,26 @@ namespace SIAT.Data
                 return output.ToList();
             }
         }
-        public static void SaveAlumno(AlumnoModel alumno)
+        public String SaveAlumno(AlumnoModel alumno)
         {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            using (SQLiteConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
+                cnn.Open();
+                SQLiteCommand insert = new SQLiteCommand("Insert into Alumnos(Nombre, F_Nacimiento, F_Ingreso, Domicilio, Telefono, Notas) " +
+                    "values ('"+alumno.Nombre+"','"+alumno.F_Nacimiento+"','"+@alumno.F_Ingreso+"','"+@alumno.Domicilio+"','"+alumno.Telefono+"','"+alumno.Notas+"')",cnn);                                
+                try
+                {
+                    insert.ExecuteNonQuery();
+                    return null;
+                }
+                catch(Exception ex)
+                {
+                    return ex.Message;
+                }
+                finally
+                {
+                    cnn.Close();
+                }
                 
             }
 

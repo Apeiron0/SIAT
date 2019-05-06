@@ -90,8 +90,6 @@ C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\ja\Dev
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\Infomade_DB.db
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\Dapper.dll
-C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\Devart.Data.dll
-C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\Devart.Data.SQLite.dll
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\DevExpress.CodeParser.v17.1.dll
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\DevExpress.DataAccess.v17.1.dll
 C:\Users\Victor\Documents\Visual Studio 2017\Projects\SIAT\SIAT\bin\Debug\DevExpress.Xpo.v17.1.dll

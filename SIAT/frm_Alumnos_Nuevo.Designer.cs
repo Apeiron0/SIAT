@@ -30,29 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Alumnos_Nuevo));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.MemoEdit();
+            this.txt_nombre = new DevExpress.XtraEditors.TextEdit();
+            this.txt_fNacimiento = new DevExpress.XtraEditors.TextEdit();
+            this.txt_fIngreso = new DevExpress.XtraEditors.TextEdit();
+            this.txt_domicilio = new DevExpress.XtraEditors.TextEdit();
+            this.txt_telefono = new DevExpress.XtraEditors.TextEdit();
+            this.txt_notas = new DevExpress.XtraEditors.MemoEdit();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_nombre.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_fNacimiento.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_fIngreso.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_domicilio.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_telefono.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_notas.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,6 +65,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(458, 31);
             this.panel1.TabIndex = 0;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(15, 3);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(127, 23);
+            this.labelControl1.TabIndex = 2;
+            this.labelControl1.Text = "Nuevo Alumno";
             // 
             // simpleButton1
             // 
@@ -86,18 +98,6 @@
             this.label1.Size = new System.Drawing.Size(294, 50);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nuevo Alumno";
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(15, 3);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(127, 23);
-            this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Nuevo Alumno";
             // 
             // label2
             // 
@@ -159,63 +159,63 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Notas:";
             // 
-            // textEdit1
+            // txt_nombre
             // 
-            this.textEdit1.Location = new System.Drawing.Point(118, 101);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(315, 22);
-            this.textEdit1.TabIndex = 8;
+            this.txt_nombre.Location = new System.Drawing.Point(118, 101);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre.Properties.Appearance.Options.UseFont = true;
+            this.txt_nombre.Size = new System.Drawing.Size(315, 22);
+            this.txt_nombre.TabIndex = 8;
             // 
-            // textEdit2
+            // txt_fNacimiento
             // 
-            this.textEdit2.Location = new System.Drawing.Point(118, 134);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.Mask.EditMask = "d";
-            this.textEdit2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTime;
-            this.textEdit2.Size = new System.Drawing.Size(114, 22);
-            this.textEdit2.TabIndex = 9;
+            this.txt_fNacimiento.Location = new System.Drawing.Point(118, 134);
+            this.txt_fNacimiento.Name = "txt_fNacimiento";
+            this.txt_fNacimiento.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fNacimiento.Properties.Appearance.Options.UseFont = true;
+            this.txt_fNacimiento.Properties.Mask.EditMask = "d";
+            this.txt_fNacimiento.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTime;
+            this.txt_fNacimiento.Size = new System.Drawing.Size(114, 22);
+            this.txt_fNacimiento.TabIndex = 9;
             // 
-            // textEdit3
+            // txt_fIngreso
             // 
-            this.textEdit3.Location = new System.Drawing.Point(319, 134);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Properties.Mask.EditMask = "d";
-            this.textEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTime;
-            this.textEdit3.Size = new System.Drawing.Size(114, 22);
-            this.textEdit3.TabIndex = 10;
+            this.txt_fIngreso.Location = new System.Drawing.Point(319, 134);
+            this.txt_fIngreso.Name = "txt_fIngreso";
+            this.txt_fIngreso.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fIngreso.Properties.Appearance.Options.UseFont = true;
+            this.txt_fIngreso.Properties.Mask.EditMask = "d";
+            this.txt_fIngreso.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTime;
+            this.txt_fIngreso.Size = new System.Drawing.Size(114, 22);
+            this.txt_fIngreso.TabIndex = 10;
             // 
-            // textEdit4
+            // txt_domicilio
             // 
-            this.textEdit4.Location = new System.Drawing.Point(118, 163);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Size = new System.Drawing.Size(315, 22);
-            this.textEdit4.TabIndex = 11;
+            this.txt_domicilio.Location = new System.Drawing.Point(118, 163);
+            this.txt_domicilio.Name = "txt_domicilio";
+            this.txt_domicilio.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_domicilio.Properties.Appearance.Options.UseFont = true;
+            this.txt_domicilio.Size = new System.Drawing.Size(315, 22);
+            this.txt_domicilio.TabIndex = 11;
             // 
-            // textEdit5
+            // txt_telefono
             // 
-            this.textEdit5.Location = new System.Drawing.Point(118, 196);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Size = new System.Drawing.Size(315, 22);
-            this.textEdit5.TabIndex = 12;
+            this.txt_telefono.Location = new System.Drawing.Point(118, 196);
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_telefono.Properties.Appearance.Options.UseFont = true;
+            this.txt_telefono.Size = new System.Drawing.Size(315, 22);
+            this.txt_telefono.TabIndex = 12;
             // 
-            // textEdit6
+            // txt_notas
             // 
-            this.textEdit6.Location = new System.Drawing.Point(118, 229);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit6.Properties.Appearance.Options.UseFont = true;
-            this.textEdit6.Size = new System.Drawing.Size(315, 154);
-            this.textEdit6.TabIndex = 13;
+            this.txt_notas.Location = new System.Drawing.Point(118, 229);
+            this.txt_notas.Name = "txt_notas";
+            this.txt_notas.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_notas.Properties.Appearance.Options.UseFont = true;
+            this.txt_notas.Size = new System.Drawing.Size(315, 154);
+            this.txt_notas.TabIndex = 13;
             // 
             // simpleButton2
             // 
@@ -229,6 +229,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(138, 38);
             this.simpleButton2.TabIndex = 14;
             this.simpleButton2.Text = "Guardar";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // frm_Alumnos_Nuevo
             // 
@@ -236,11 +237,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 460);
             this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.textEdit5);
-            this.Controls.Add(this.textEdit4);
-            this.Controls.Add(this.textEdit3);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.txt_telefono);
+            this.Controls.Add(this.txt_domicilio);
+            this.Controls.Add(this.txt_fIngreso);
+            this.Controls.Add(this.txt_fNacimiento);
+            this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -249,18 +250,18 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textEdit6);
+            this.Controls.Add(this.txt_notas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Alumnos_Nuevo";
             this.Text = "frm_Alumnos_Nuevo";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_nombre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_fNacimiento.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_fIngreso.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_domicilio.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_telefono.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_notas.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,12 +279,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.MemoEdit textEdit6;
+        private DevExpress.XtraEditors.TextEdit txt_nombre;
+        private DevExpress.XtraEditors.TextEdit txt_fNacimiento;
+        private DevExpress.XtraEditors.TextEdit txt_fIngreso;
+        private DevExpress.XtraEditors.TextEdit txt_domicilio;
+        private DevExpress.XtraEditors.TextEdit txt_telefono;
+        private DevExpress.XtraEditors.MemoEdit txt_notas;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

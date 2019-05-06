@@ -21,5 +21,30 @@ namespace SIAT
         {
             this.Close();
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            Modelos.AlumnoModel alumno = new Modelos.AlumnoModel();
+            alumno.Domicilio = txt_domicilio.Text;
+            alumno.F_Ingreso = Convert.ToDateTime(txt_fIngreso.Text);
+            alumno.F_Nacimiento = Convert.ToDateTime(txt_fNacimiento.Text);
+            alumno.Nombre = txt_nombre.Text;
+            alumno.Notas = txt_notas.Text;
+            alumno.Telefono = txt_telefono.Text;
+
+            try
+            {
+                alumno.guardarAlumno(alumno);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }                  
+            
+            
+            
+        }
     }
 }

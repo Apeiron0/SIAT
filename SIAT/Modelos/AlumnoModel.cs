@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SIAT.Data;
 
 namespace SIAT.Modelos
 {
@@ -37,5 +38,23 @@ namespace SIAT.Modelos
             return age;
         }
 
+        public string guardarAlumno(AlumnoModel alumno)
+        {
+            //AlumnoModel alumno = new AlumnoModel();
+            try
+            {
+                SqliteDataAccess dataAccess = new SqliteDataAccess();
+                dataAccess.SaveAlumno(alumno);
+                return null;
+            }
+            catch (Exception ex)
+            {
+
+                return ex.Message;
+            }            
+            
+        }
+
+                     
     }
 }
